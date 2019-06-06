@@ -10,6 +10,7 @@
     "@types/react-select": "^3.0.2",
     "@types/styled-components": "^4.1.18",
     "axios": "^0.19.0",
+    "cross-env": "^5.2.0",
     "gh-pages": "^2.0.1",
     "moment": "^2.24.0",
     "react": "^16.9.0",
@@ -23,11 +24,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "cross-env GENERATE_SOURCEMAP=false react-scripts build",
+    "build": "cross-env INLINE_RUNTIME_CHUNK=false react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
