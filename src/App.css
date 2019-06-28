@@ -1,12 +1,43 @@
-/* TODO: Move those styles to respective components */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* App component */
+li {
+  list-style: none;
+}
+html {
+  width: 300px;
+  background-color: cadetblue;
+}
+body {
+  font-size: 1.1rem;
+  font-family: Lato;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #root {
   color: white;
   width: 75vw;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
+  /* margin-top: 30vh; */
+}
+
+#root h1,
+h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+.card li {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 /* Change City Component  */
@@ -19,7 +50,7 @@
 
 .select select {
   width: 100%;
-  padding: 0.8rem;
+  padding: 0.4rem;
   border-radius: 2px;
 }
 
@@ -33,44 +64,4 @@ ul.changeCity {
 .activeLang {
   font-weight: bolder;
   text-decoration: underline;
-}
-
-/* Media Queryes */
-
-@media (min-width: 500px) and (max-width: 600px) {
-  #root {
-    width: 70vw;
-    font-size: calc(1rem + 1vh);
-  }
-}
-@media (min-width: 600px) and (max-width: 700px) {
-  #root {
-    width: 65vw;
-    font-size: calc(1.2rem + 1vh);
-  }
-}
-@media (min-width: 700px) and (max-width: 800px) {
-  #root {
-    width: 60vw;
-    font-size: calc(1.4rem + 1vh);
-  }
-}
-@media (min-width: 800px) and (max-width: 1200px) {
-  #root {
-    width: 45vw;
-    font-size: 1.4em;
-  }
-}
-@media (min-width: 1200px) {
-  #root {
-    width: 450px;
-    font-size: 1.8rem;
-  }
-  .card {
-    padding-top: 1em;
-  }
-
-  .card ul {
-    height: 50vh;
-  }
 }
