@@ -51,11 +51,12 @@ h2 {
 
 .select {
   width: 100%;
+  color:black;
 }
 
 .select select {
   width: 100%;
-  padding: .4rem;
+  padding: .8rem;
   margin-top: 2rem;
   border-radius: 2px;
 }

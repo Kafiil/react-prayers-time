@@ -43,7 +43,7 @@ const PrayerCard = ({ prayer }) => {
 
   return (
     <div className="card">
-      <h1>{prayer.city}</h1>
+      {/* <h1>{prayer.city}</h1> */}
       <h2>{date}</h2>
       <ul>
         {NAMES.map(name => {

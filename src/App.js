@@ -14,7 +14,7 @@ const API_URL = 'https://maroc-salat.herokuapp.com/';
 /**
  *Delete all items in the localStorage that are not specified as arguments
  *
- * @param {*} args keys that should not be deleted from localStorage
+ * @param {*} args  keys that should not be deleted from localStorage
  */
 const cleanLocalStorage = (...args) => {
   Object.keys({ ...localStorage })
@@ -58,17 +58,13 @@ const App = () => {
     localStorage.setItem('id', id);
   }, [id]);
 
-  const onChange = e => {
-    const id = +e.target.value;
-    setId(id);
-  };
 
   return (
     <div id="main">
       {id && prayers ? (
         <>
+          <SelectList value={id} values={cities} onChange={e=>setId(e.value)} />
           <PrayerCard prayer={prayers.find(e => e.id === id)} />
-          <SelectList value={id} values={cities} onChange={onChange} />
         </>
       ) : (
         <Spinner />

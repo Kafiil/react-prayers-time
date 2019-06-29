@@ -9,6 +9,7 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-scripts": "2.1.8",
+    "react-select": "^3.0.4",
     "reset-css": "^4.0.1"
   },
   "scripts": {
