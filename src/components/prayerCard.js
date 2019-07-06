@@ -3,6 +3,7 @@ import moment from 'moment';
 import 'moment/locale/fr';
 import { timesFromStringtoDate } from '../utils/dates';
 import { toTitleCase } from '../utils/strings';
+import Clock from './clock';
 const NAMES = require('../data/prayers');
 
 const PrayerCard = ({ prayer }) => {
@@ -34,6 +35,9 @@ const PrayerCard = ({ prayer }) => {
     <div className="card">
       <h1>{prayer.city}</h1>
       <h2>{date}</h2>
+      <h2>
+        <Clock />
+      </h2>
       <ul>
         {NAMES.map(name => {
           return (
