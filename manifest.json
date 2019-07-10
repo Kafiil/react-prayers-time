@@ -1,18 +1,5 @@
 {
-  "manifest_version": 2,
   "name": "Salat",
   "description": "Prayers times in Morocco",
-  "version": "0.0.1",
-  "browser_action": {
-    "default_popup": "index.html",
-    "default_title": "Open the popup"
-  },
-  "icons": {
-    "16": "favicon.ico",
-    "48": "favicon.ico",
-    "128": "favicon.ico"
-  },
-  "permissions": [
-    "storage"
-  ]
+  "version": "0.0.1"
 }
