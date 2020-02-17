@@ -1,5 +1,12 @@
 {
   "name": "Salat",
+  "short_name": "Salat",
   "description": "Prayers times in Morocco",
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "theme_color": "#0d29e4",
+  "background_color": "#793c8b",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/index.html"
 }
