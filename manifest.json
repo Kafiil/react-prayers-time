@@ -1,24 +1,15 @@
 {
+  "manifest_version": 2,
   "name": "Salat",
-  "short_name": "Salat",
   "description": "Prayers times in Morocco",
   "version": "0.0.1",
-  "theme_color": "#0d29e4",
-  "background_color": "#793c8b",
-  "display": "standalone",
-  "orientation": "portrait",
-  "scope": "/",
-  "start_url": "/index.html",
-  "icons": [
-    {
-      "src": "/android-chrome-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/android-chrome-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ]
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "Open the popup"
+  },
+  "icons": {
+    "16": "favicon-16x16.png",
+    "32": "favicon-32x32.png"
+  },
+  "permissions": ["storage"]
 }
