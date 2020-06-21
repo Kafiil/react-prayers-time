@@ -9,7 +9,7 @@ import { Table, Tbody, Td, Thead, Tr } from './styles';
 
 const NAMES = require('../../data/prayers.json');
 
-const NAMES_FR = Object.keys(NAMES).map((e) => e);
+const NAMES_FR = Object.keys(NAMES).map(e => e);
 
 const Monthly = () => {
   const { lang, id } = useContext(AppContext);
@@ -40,15 +40,13 @@ const Monthly = () => {
                 key={i}
                 className={`${
                   new Date(prayer.day).getDate() === today ? 'today' : ''
-                }`}
-              >
+                }`}>
                 <Td className="first">
                   <FormattedDate
                     value={new Date(prayer.day)}
                     month="long"
                     day="numeric"
-                    weekday="long"
-                  ></FormattedDate>
+                    weekday="long"></FormattedDate>
                 </Td>
                 {NAMES_FR.map((name: string, j: number) => (
                   <Td key={j}>{parseTime(prayer[name])}</Td>

@@ -43,10 +43,10 @@ export const cleanLocalStorage = (cityId: number) => {
     .join('_');
 
   Object.keys({ ...localStorage })
-    .filter((e) => !e.startsWith(dailyKey))
-    .filter((e) => !e.startsWith(monthlyKey))
-    .filter((e) => !rest.includes(e))
-    .forEach((e) => localStorage.removeItem(e));
+    .filter(e => !e.startsWith(dailyKey))
+    .filter(e => !e.startsWith(monthlyKey))
+    .filter(e => !rest.includes(e))
+    .forEach(e => localStorage.removeItem(e));
 };
 
 export const getStorageKey = (cityId: number, isDaily: boolean): string => {

@@ -1,7 +1,7 @@
 import LOCALES from '../locales';
 import keys from './keys';
 export default {
-  [LOCALES.ARABIC]: {
+  [LOCALES.ARABIC.id]: {
     [keys.MONTH]: 'الشهر',
     [keys.DAY]: 'اليوم',
     [keys.LIGHT]: 'لون فاتح',

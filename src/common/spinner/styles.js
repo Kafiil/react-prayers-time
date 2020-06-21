@@ -21,8 +21,8 @@ export const Spinner = styled.div`
     margin: 1px;
     border-radius: 50%;
     border: 5px solid #fff;
-    border-color: ${(props) =>
-      `${props.theme.color} transparent ${props.theme.color} transparent`};
+    border-color: ${props =>
+      `${props.theme.spinner.border} transparent ${props.theme.spinner.border}  transparent`};
     animation: ${spin} 1.2s linear infinite;
   }
 `;

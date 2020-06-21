@@ -1,29 +1,50 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
- 
 body {
-  font-family: Lato !important;
-  background-color: ${(props) => props.theme.backgroundColor} !important;
-  color: ${(props) => props.theme.color} !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-#root {
-  color: ${(props) => props.theme.color};
-  width: 75vw;
-  height:100vh;
-  margin: auto;
-}
 `;
 
 export const dark = {
-  color: 'white',
-  backgroundColor: 'black',
-  differenceColor: '#f32222',
+  header: {
+    container: 'text-blue-100 bg-blue-900',
+  },
+  spinner: {
+    border: 'white',
+  },
+  footer: {
+    container: 'text-blue-100 bg-blue-900',
+  },
+  defaultLayout: {
+    container: 'text-white bg-black',
+  },
+  main: {
+    container: 'bg-gray-900',
+  },
+  daily: {
+    difference: 'text-red-600',
+  },
 };
 
 export const light = {
-  color: 'black',
-  backgroundColor: 'white',
-  differenceColor: '#ec8b8b',
+  header: {
+    container: 'bg-gray-300',
+  },
+  spinner: {
+    border: 'black',
+  },
+  footer: {
+    container: 'bg-gray-300',
+  },
+  defaultLayout: {
+    container: 'text-black bg-white',
+  },
+  main: {
+    container: 'bg-red-100',
+  },
+  daily: {
+    difference: 'text-red-500',
+  },
 };

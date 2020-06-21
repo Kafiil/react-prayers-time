@@ -1,5 +1,6 @@
 import moment from 'moment';
-import React from 'react';
+import React, { useContext } from 'react';
+import { ThemeContext } from 'styled-components';
 import cities from '../data/cities.json';
 import { TIME_OFFSET } from '../settings';
 import { IState } from './types';
@@ -16,3 +17,5 @@ export const initialState: IState = {
 };
 
 export const AppContext = React.createContext<IState>(initialState);
+
+export const useCurrentTheme = () => useContext(ThemeContext);

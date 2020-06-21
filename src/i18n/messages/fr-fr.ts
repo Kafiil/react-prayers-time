@@ -1,7 +1,7 @@
 import LOCALES from '../locales';
 import keys from './keys';
 export default {
-  [LOCALES.FRENCH]: {
+  [LOCALES.FRENCH.id]: {
     [keys.MONTH]: 'Mois',
     [keys.DAY]: 'Jour',
     [keys.LIGHT]: 'Clair',

@@ -2,17 +2,15 @@ import styled from 'styled-components';
 
 export const Table = styled.table`
   width: 100%;
-  border: ${(props) => `2px solid ${props.theme.color}`};
+  border: ${props => `2px solid ${props.theme.color}`};
 `;
 export const Tbody = styled.tbody``;
 
 export const Tr = styled.tr`
   display: flex;
   justify-content: space-around;
-  flex-direction: ${(props) =>
-    props.lang === 'fr-fr' ? 'row' : 'row-reverse'};
-  text-align: ${(props) => (props.lang === 'fr-fr' ? 'left' : 'right')};
-  border-bottom: ${(props) => `1px solid ${props.theme.color}`};
+  text-align: ${props => (props.lang === 'fr-fr' ? 'left' : 'right')};
+  border-bottom: ${props => `1px solid ${props.theme.color}`};
 
   &.today {
     background-color: #2d3edf !important;

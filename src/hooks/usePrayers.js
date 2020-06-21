@@ -1,6 +1,10 @@
 import { useEffect, useState } from 'react';
 import { API_URL } from '../settings';
-import { cleanLocalStorage, getFromLocalStorageOrApi, getStorageKey } from '../utils/localStorage';
+import {
+  cleanLocalStorage,
+  getFromLocalStorageOrApi,
+  getStorageKey,
+} from '../utils/localStorage';
 
 const byDay = (a, b) => new Date(a.day).getDate() - new Date(b.day).getDate();
 

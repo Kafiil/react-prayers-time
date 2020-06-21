@@ -1,13 +1,8 @@
 module.exports = {
-  purge: [
-    //TODO: regroup these by regex
-    // 'src/**/*.{js,jsx,ts,tsx}'
-    './src/**/*.js','./src/**/*.ts','./src/**/*.tsx','./src/**/*.jsx',
-  ],
+  purge: ['src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {},
   },
   variants: {},
-  plugins: [
-  ],
-}
+  plugins: [],
+};

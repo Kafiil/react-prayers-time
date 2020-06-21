@@ -17,8 +17,7 @@ const Clock = ({ displayClock = false }) => {
           year="numeric"
           month="long"
           day="numeric"
-          weekday="long"
-        ></FormattedDate>
+          weekday="long"></FormattedDate>
       </H2>
       {displayClock && (
         <H3>
